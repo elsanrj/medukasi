@@ -14,6 +14,13 @@ import qrisLogo from '../assets/payment/qris.png';
 
 export default function PaymentPage() {
   const [selectedMethod, setSelectedMethod] = useState('');
+  const totalAmount = 120000;
+
+  const formatCurrency = (amount) =>
+    new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+    }).format(amount);
 
   const vaMethods = [
     { name: 'BRI', logo: briLogo },
@@ -45,14 +52,24 @@ export default function PaymentPage() {
 
       <main className="flex justify-center py-10">
         <div className="bg-white shadow-xl rounded-xl p-6 w-full max-w-md">
-          <h2 className="text-center text-lg font-bold mb-4">METODE PEMBAYARAN</h2>
+          <h2 className="text-center text-lg font-bold mb-1">METODE PEMBAYARAN</h2>
+          <div className="text-center mb-6 py-5">
+            <p className="text-left text-black text-base font-medium">Total harga yang dibayar</p>
+            <p className="text-left text-red-600 text-xl font-bold tracking-wider">
+                {formatCurrency(totalAmount)}
+            </p>
+          </div>
+
 
           {/* Transfer Virtual Account */}
           <div className="mb-4">
             <div className="bg-gray-300 rounded-lg p-4">
               <p className="font-semibold mb-2">Transfer Virtual Account</p>
               {vaMethods.map((bank) => (
-                <label key={bank.name} className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer">
+                <label
+                  key={bank.name}
+                  className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer"
+                >
                   <img src={bank.logo} alt={bank.name} className="h-6 w-auto mr-2" />
                   <span className="mr-auto">{bank.name}</span>
                   <input
@@ -88,7 +105,10 @@ export default function PaymentPage() {
             <div className="bg-gray-300 rounded-lg p-4">
               <p className="font-semibold mb-2">E-Wallet</p>
               {ewalletMethods.map((wallet) => (
-                <label key={wallet.name} className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer">
+                <label
+                  key={wallet.name}
+                  className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer"
+                >
                   <img src={wallet.logo} alt={wallet.name} className="h-6 w-auto mr-2" />
                   <span className="mr-auto">{wallet.name}</span>
                   <input
@@ -125,7 +145,7 @@ export default function PaymentPage() {
 
           {/* Footer */}
           <div className="text-sm text-gray-700 mb-2">
-            Metode Pembayaran:{' '}
+            Metode Pembayaran:{" "}
             <span className="text-green-600 font-semibold">
               {selectedMethod || 'Belum dipilih'}
             </span>
