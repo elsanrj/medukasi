@@ -5,4 +5,4 @@
 ![image](https://github.com/user-attachments/assets/9ea09a71-63a6-4174-a51a-93134804b776)
 
 - Payment
-![image](https://github.com/user-attachments/assets/31e53eb0-32c0-4892-9482-330d633c0aa4)
+![image](https://github.com/user-attachments/assets/ab61a819-81ff-4048-9638-b235bba8d387)
