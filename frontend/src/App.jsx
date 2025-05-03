@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import DashboardPimpinan from './pages/HomeAfterLogin';
+import DashboardPimpinan from './pages/HomeBeforeLogin';
 
 const App = () => {
   return <DashboardPimpinan />;

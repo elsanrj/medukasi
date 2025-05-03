@@ -1,21 +1,23 @@
 import React from 'react';
 import logo from '../assets/logo_medukasi.png';
 
-export default function Header() {
+const Header = () => {
   return (
-    <header className="bg-gradient-to-r from-red-300 to-purple-500 text-white px-6 py-4 flex justify-between items-center shadow">
+    <header className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-red-400 to-indigo-900 text-white">
       <div className="flex items-center">
-        <img src={logo} alt="logo" className="h-10 w-auto" />
+        <img src={logo} alt="FME Logo" className="h-9 w-auto" />
       </div>
-      <nav className="flex gap-4 items-center text-sm">
+
+      <nav className="flex items-center gap-6">
         <a href="#" className="hover:underline">Home</a>
         <a href="#" className="hover:underline">Product</a>
-        <a href="#" className="hover:underline">Testimoni</a>
+        <a href="#" className="hover:underline">Testimony</a>
         <a href="#" className="hover:underline">Others</a>
         <a href="#" className="hover:underline">Contacts</a>
-        <a href="#" className="hover:underline">Login</a>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-1 rounded">Sign Up</button>
-      </nav>
+        <a href="#" className="hover:underline">Sign Up</a>
+        </nav>
     </header>
   );
-}
+};
+
+export default Header;
