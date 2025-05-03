@@ -13,7 +13,7 @@ import mastercardLogo from '../assets/payment/mastercard.png';
 import jcbLogo from '../assets/payment/jcb.png';
 import qrisLogo from '../assets/payment/qris.png';
 
-export default function PaymentPage() {
+export default function Payment() {
   const navigate = useNavigate();
   const [selectedMethod, setSelectedMethod] = useState('');
   const totalAmount = 120000;

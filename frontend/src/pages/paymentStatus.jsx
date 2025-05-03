@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 
-export default function PaymentStatusPage(){
+export default function PaymentStatus(){
   return (
     <div className="bg-purple-50 min-h-screen">
       <Header />

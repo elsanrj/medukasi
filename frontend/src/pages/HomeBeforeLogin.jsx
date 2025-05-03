@@ -10,7 +10,7 @@ import linkedinIcon from '../assets/medsos/linkedin.png';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo_medukasi.png';
 
-export default function FMEHomePage() {
+export default function HomeBeforeLogin() {
   return (
     <div className="flex flex-col min-h-screen font-sans bg-gradient-to-b from-purple-200 to-white">
       

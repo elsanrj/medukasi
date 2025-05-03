@@ -5,7 +5,7 @@ import emailIcon from "../assets/login/email.png";
 import keyIcon from "../assets/login/key.png";
 import userIcon from "../assets/login/user.png";
 
-export default function RegisterForm() {
+export default function Register() {
   return (
     <>
       <Header />

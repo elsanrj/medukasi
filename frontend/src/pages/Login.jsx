@@ -5,7 +5,7 @@ import logo from "../assets/logo_medukasi.png";
 import email from "../assets/login/email.png";
 import key from "../assets/login/key.png";
 
-export default function LoginForm() {
+export default function Login() {
   return (
     <>
       {/* Header */}

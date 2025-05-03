@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { UploadCloud } from 'lucide-react';
 import Header from '../components/Header';
 
-export default function UploadProofPage() {
+export default function UploadProof() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);

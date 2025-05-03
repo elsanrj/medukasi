@@ -34,7 +34,7 @@ const products = [
   },
 ];
 
-export default function ProductGrid() {
+export default function Product() {
   return (
     <div className="min-h-screen bg-white">
       <Header />

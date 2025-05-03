@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import qrisLogo from '../assets/payment/qris.png';
 import qrImage from '../assets/payment/qr-code.png';
 
-export default function QrisSection() {
+export default function PaymentSection() {
   const totalAmount = 252000;
 
   const formatCurrency = (amount) =>

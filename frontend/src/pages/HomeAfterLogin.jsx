@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo_medukasi.png';
 
-export default function FMEHomePage() {
+export default function HomeAfterLogin() {
   return (
     <div className="flex flex-col min-h-screen font-sans bg-gradient-to-b from-purple-200 to-white">
       
