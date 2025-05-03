@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom';
 
 import briLogo from '../assets/payment/bri.png';
 import mandiriLogo from '../assets/payment/mandiri.png';
@@ -13,6 +14,7 @@ import jcbLogo from '../assets/payment/jcb.png';
 import qrisLogo from '../assets/payment/qris.png';
 
 export default function PaymentPage() {
+  const navigate = useNavigate();
   const [selectedMethod, setSelectedMethod] = useState('');
   const totalAmount = 120000;
 
@@ -50,28 +52,29 @@ export default function PaymentPage() {
     <div className="bg-purple-50 min-h-screen">
       <Header />
 
-      <main className="flex justify-center py-10">
-        <div className="bg-white shadow-xl rounded-xl p-6 w-full max-w-md">
+      <main className="flex justify-center py-12">
+        <div className="bg-white shadow-xl rounded-xl p-12 w-full max-w-md">
           <h2 className="text-center text-lg font-bold mb-1">METODE PEMBAYARAN</h2>
           <div className="text-center mb-6 py-5">
             <p className="text-left text-black text-base font-medium">Total harga yang dibayar</p>
             <p className="text-left text-red-600 text-xl font-bold tracking-wider">
-                {formatCurrency(totalAmount)}
+              {formatCurrency(totalAmount)}
             </p>
           </div>
 
 
           {/* Transfer Virtual Account */}
           <div className="mb-4">
-            <div className="bg-gray-300 rounded-lg p-4">
+            <div className="bg-gray-300 rounded-lg px-8 py-6">
               <p className="font-semibold mb-2">Transfer Virtual Account</p>
               {vaMethods.map((bank) => (
                 <label
                   key={bank.name}
-                  className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer"
+                  className="flex items-center justify-between bg-white rounded-lg px-3 py-2 mb-2 cursor-pointer"
                 >
-                  <img src={bank.logo} alt={bank.name} className="h-6 w-auto mr-2" />
-                  <span className="mr-auto">{bank.name}</span>
+                  <div className="flex items-center">
+                    <img src={bank.logo} alt={bank.name} className="h-6 w-auto mr-2" />
+                  </div>
                   <input
                     type="radio"
                     name="payment"
@@ -85,11 +88,11 @@ export default function PaymentPage() {
 
           {/* QRIS */}
           <div className="mb-4">
-            <div className="bg-gray-300 rounded-lg p-4">
+            <div className="bg-gray-300 rounded-lg px-8 py-6">
               <p className="font-semibold mb-2">QRIS</p>
-              <label className="flex items-center bg-white rounded px-2 py-1 cursor-pointer">
+              <label className="flex items-center justify-between bg-white rounded-lg px-3 py-2 mb-2 cursor-pointer"
+              >
                 <img src={qrisMethod.logo} alt="QRIS" className="h-6 w-auto mr-2" />
-                <span className="mr-auto">{qrisMethod.name}</span>
                 <input
                   type="radio"
                   name="payment"
@@ -101,16 +104,15 @@ export default function PaymentPage() {
           </div>
 
           {/* E-Wallet */}
-          <div className="mb-6">
-            <div className="bg-gray-300 rounded-lg p-4">
+          <div className="mb-4">
+            <div className="bg-gray-300 rounded-lg px-8 py-6">
               <p className="font-semibold mb-2">E-Wallet</p>
               {ewalletMethods.map((wallet) => (
                 <label
                   key={wallet.name}
-                  className="flex items-center bg-white rounded px-2 py-1 mb-2 cursor-pointer"
+                  className="flex items-center justify-between bg-white rounded-lg px-3 py-2 mb-2 cursor-pointer"
                 >
                   <img src={wallet.logo} alt={wallet.name} className="h-6 w-auto mr-2" />
-                  <span className="mr-auto">{wallet.name}</span>
                   <input
                     type="radio"
                     name="payment"
@@ -123,10 +125,11 @@ export default function PaymentPage() {
           </div>
 
           {/* Credit/Debit Card */}
-          <div className="mb-6">
-            <div className="bg-gray-300 rounded-lg p-4">
+          <div className="mb-4">
+            <div className="bg-gray-300 rounded-lg px-8 py-6">
               <p className="font-semibold mb-2">{cardMethods[0].name}</p>
-              <label className="flex items-center bg-white rounded px-2 py-2 space-x-2 cursor-pointer">
+              <label className="flex items-center bg-white rounded-lg px-3 py-2 cursor-pointer"
+              >
                 <div className="flex space-x-2">
                   {cardMethods[0].logos.map((logo, idx) => (
                     <img key={idx} src={logo} alt="card" className="h-6 w-auto" />
@@ -144,17 +147,17 @@ export default function PaymentPage() {
           </div>
 
           {/* Footer */}
-          <div className="text-sm text-gray-700 mb-2">
+          <div className="flex justify-between text-sm text-gray-700 mb-2">
             Metode Pembayaran:{" "}
             <span className="text-green-600 font-semibold">
               {selectedMethod || 'Belum dipilih'}
             </span>
           </div>
           <button
-            className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
-            disabled={!selectedMethod}
+            className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+            onClick={() => navigate('/payment-section')}
           >
-            Gunakan Metode ini
+            Lanjutkan
           </button>
         </div>
       </main>
