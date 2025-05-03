@@ -38,15 +38,15 @@ export default function Product() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main className="px-6 py-10">
+      <main className="px-24 py-10">
         <h1 className="text-2xl font-bold mb-8">Kategori Produk</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-36">
           {products.map((product, idx) => (
             <div
               key={idx}
-              className={`bg-gradient-to-r from-pink-400 to-indigo-500 rounded-2xl p-6 shadow-lg text-center transition-all ${
-                product.active ? "border-4 border-blue-400" : ""
-              }`}
+              className={`bg-gradient-to-r from-red-400 to-indigo-900 rounded-2xl px-6 py-16 shadow-lg text-center transition-all w-full h-full flex flex-col justify-between ${product.active ? "border-4 border-blue-400" : ""
+                }`}
             >
               <img
                 src={product.image}

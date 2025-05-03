@@ -3,25 +3,11 @@ import React from 'react';
 
 const HeaderAdmin = ({ toggleSidebar }) => {
   return (
-    <div className="flex items-center justify-between px-6 py-3 bg-gradient-to-r from-red-500 to-indigo-800 text-white shadow-md">
+    <div className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-red-400 to-indigo-900 text-white">
       {/* Logo dan Menu Button - Dipindah ke kiri */}
-      <div className="flex items-center w-56"> {/* Lebar sama dengan sidebar */}
-        <button 
-          onClick={toggleSidebar}
-          className="p-2 rounded-md hover:bg-white/10 transition-colors mr-4"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
-        </button>
-        <div className="text-2xl font-bold">
-          <span className="text-red-200">e</span>
-          <span className="text-white">ME</span>
-        </div>
-      </div>
-      
+
       {/* Search Bar - Diposisikan sejajar dengan konten utama */}
-      <div className="flex-1 ml-6"> {/* Margin kiri disesuaikan */}
+      <div className="flex-1 ml-56"> {/* Margin kiri disesuaikan */}
         <div className="relative max-w-2xl">
           <input
             type="text"
@@ -33,7 +19,7 @@ const HeaderAdmin = ({ toggleSidebar }) => {
           </svg>
         </div>
       </div>
-      
+
       {/* Icons and User Profile */}
       <div className="flex items-center gap-5">
         <button className="p-1 relative hover:bg-white/10 rounded-full p-2 transition-colors">
@@ -42,7 +28,7 @@ const HeaderAdmin = ({ toggleSidebar }) => {
           </svg>
           <span className="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-400"></span>
         </button>
-        
+
         <div className="flex items-center gap-2 cursor-pointer group">
           <div className="h-9 w-9 rounded-full bg-white overflow-hidden border-2 border-white/30 group-hover:border-white/50 transition-colors">
             <img src="https://via.placeholder.com/40" alt="User" className="h-full w-full object-cover" />

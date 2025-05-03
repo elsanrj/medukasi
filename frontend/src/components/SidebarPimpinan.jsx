@@ -1,5 +1,6 @@
 // SidebarPimpinan.jsx
 import React from 'react';
+import logo from '../assets/logo_medukasi.png';
 
 const SidebarPimpinan = ({ activeMenu, setActiveMenu }) => {
   // Menu items
@@ -29,31 +30,31 @@ const SidebarPimpinan = ({ activeMenu, setActiveMenu }) => {
       )
     }
   ];
-  
+
   return (
     <div className="h-full bg-gradient-to-b from-red-200 to-indigo-200 p-4">
       <div className="mb-6">
         <div className="flex items-center mb-6">
-          <span className="text-red-500 font-bold text-xl">e</span>
-          <span className="text-indigo-700 font-bold text-xl">ME</span>
+          <div className="flex items-center">
+            <img src={logo} alt="FME Logo" className="h-9 w-auto" />
+          </div>
           <span className="ml-2 text-gray-700 font-medium">PIMPINAN</span>
         </div>
-        
+
         <div className="mb-4">
           <h3 className="text-gray-600 mb-2">Menu</h3>
         </div>
-        
+
         <nav>
           <ul className="space-y-2">
             {menuItems.map((item) => (
               <li key={item.name}>
-                <button 
+                <button
                   onClick={() => setActiveMenu(item.name)}
-                  className={`flex items-center px-3 py-2 rounded-md transition-colors w-full ${
-                    activeMenu === item.name
+                  className={`flex items-center px-3 py-2 rounded-md transition-colors w-full ${activeMenu === item.name
                       ? 'bg-indigo-600 text-white'
                       : 'hover:bg-indigo-100 text-gray-700'
-                  }`}
+                    }`}
                 >
                   <span className="mr-3">{item.icon}</span>
                   {item.name}
