@@ -32,13 +32,13 @@ export default function HomeBeforeLogin() {
               { label: 'Medali OSN', value: 232 },
               { label: 'Persiapan Kampus', value: 50 }
             ].map((item, idx) => (
-              <div key={idx} className="bg-purple-100 px-6 py-4 rounded shadow text-center w-36">
-                <p className="text-2xl font-bold text-purple-700">{item.value}</p>
+              <div key={idx} className="bg-gradient-to-r from-red-400 to-indigo-900 text-white px-6 py-4 rounded-xl shadow text-center w-36">
+                <p className="text-2xl font-bold">{item.value}</p>
                 <p className="text-sm">{item.label}</p>
               </div>
             ))}
           </div>
-          <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-4 rounded shadow mt-6 max-w-xl">
+          <div className="bg-gradient-to-r from-red-400 to-indigo-900 text-white px-6 py-4 rounded-xl shadow mt-6 max-w-xl">
             <h2 className="text-lg font-semibold">LEBIH DARI 35 SEKOLAH</h2>
             <p className="text-sm mt-1 leading-relaxed">
               Bermitra jangka panjang dengan kami dalam memberikan kelas persiapan untuk siswa siswi dalam menghadapi berbagai kompetisi akademik bergengsi baik nasional maupun internasional.
@@ -48,7 +48,7 @@ export default function HomeBeforeLogin() {
       </section>
 
       {/* Footer */}
-      <footer style={{ backgroundColor: '#B05F5F' }} className="text-white px-8 py-10 rounded-t-xl">
+      <footer style={{ backgroundColor: '#B05F5F' }} className="text-white px-8 py-10">
         <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-8">
           {/* Kiri: Info Perusahaan */}
           <div className="lg:w-2/3">

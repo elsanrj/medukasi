@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo_medukasi.png';
 
 const Header = () => {
@@ -9,12 +10,24 @@ const Header = () => {
       </div>
 
       <nav className="flex items-center gap-6">
-        <a href="#" className="hover:underline">Home</a>
-        <a href="#" className="hover:underline">Product</a>
-        <a href="#" className="hover:underline">Testimony</a>
-        <a href="#" className="hover:underline">Others</a>
-        <a href="#" className="hover:underline">Contacts</a>
-        <a href="#" className="hover:underline">Sign Up</a>
+        <Link to="/" className="hover:underline">
+          Home
+        </Link>
+        <Link to="/product" className="hover:underline">
+          Product
+        </Link>
+        <Link to="#" className="hover:underline">
+          Testimoni
+        </Link>
+        <Link to="#" className="hover:underline">
+          Others
+        </Link>
+        <Link to="#" className="hover:underline">
+          Contacts
+        </Link>
+        <Link to="/register" className="hover:underline">
+          Sign Up
+        </Link>
         </nav>
     </header>
   );

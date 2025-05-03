@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/HeaderHome";
 
 import satu from '../assets/product/satu.jpeg';
@@ -58,12 +59,12 @@ export default function Product() {
               </h2>
               <p className="text-white mb-4 text-sm">{product.description}</p>
               <div className="flex justify-center gap-4">
-                <button className="bg-blue-600 text-white px-6 py-1 rounded-full shadow">
+                <Link to="#" className="bg-blue-600 text-white px-6 py-1 rounded-full shadow text-center">
                   Detail
-                </button>
-                <button className="bg-blue-600 text-white px-6 py-1 rounded-full shadow">
-                  Buy
-                </button>
+                </Link>
+                <Link to="/payment" className="bg-blue-600 text-white px-6 py-1 rounded-full shadow text-center">
+                  Beli
+                </Link>
               </div>
             </div>
           ))}

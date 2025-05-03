@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from '../assets/logo_medukasi.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -9,11 +10,21 @@ const Header = () => {
       </div>
 
       <nav className="flex items-center gap-6">
-        <a href="#" className="hover:underline">Home</a>
-        <a href="#" className="hover:underline">Class</a>
-        <a href="#" className="hover:underline">Others</a>
-        <a href="#" className="hover:underline">Contacts</a>
-        <a href="#" className="hover:underline">My Class</a>
+        <Link to="/" className="hover:underline">
+          Home
+        </Link>
+        <Link to="#" className="hover:underline">
+          Class
+        </Link>
+        <Link to="#" className="hover:underline">
+          Others
+        </Link>
+        <Link to="#" className="hover:underline">
+          Contacts
+        </Link>
+        <Link to="#" className="hover:underline">
+          My Class
+        </Link>
         <div className="bg-white text-gray-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">👤</div>
       </nav>
     </header>
