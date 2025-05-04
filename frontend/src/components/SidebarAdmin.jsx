@@ -1,4 +1,6 @@
 import React from 'react';
+import logo from '../assets/logo_medukasi.png';
+
 
 const SidebarAdmin = ({ activeMenu, setActiveMenu }) => {
   // Daftar menu dengan ikon sesuai desain awal
@@ -24,9 +26,9 @@ const SidebarAdmin = ({ activeMenu, setActiveMenu }) => {
   return (
 <div className="h-full bg-gradient-to-b from-[#F1DAE1] to-[#D5CEE5] p-4 shadow-xl flex flex-col">
 {/* Header Section */}
-      <div className="mb-6 border-b pb-4">
-        <h1 className="text-2xl font-bold text-[#4A3A6A]">ME ADMIN</h1>
-      </div>
+      <div className="flex items-center">
+                      <img src={logo} alt="FME Logo" className="h-9 w-auto" />
+                    </div>
 
       {/* Menu Section */}
       <div className="flex-1 overflow-auto">
