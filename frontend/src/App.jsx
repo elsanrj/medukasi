@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import DashboardPimpinan from './pages/DashboardPimpinan';
 import DashboardAdmin from './pages/DashboardAdmin';
 import DashboardStudent from './pages/DashboardStudent';
+import DashboardManager from './pages/DashboardManager';
 import ClassAfterBuy from './pages/MyClassAfterBuy';
 import ClassBeforeBuy from './pages/MyClassBeforeBuy';
 import StaticMonitoring from './pages/StatisticMonitoring';
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard-pimpinan" element={<DashboardPimpinan />} />
         <Route path="/dashboard-admin" element={<DashboardAdmin />} />
+        <Route path="/dashboard-manager" element={<DashboardManager />} />
         <Route path="/dashboard-student" element={<DashboardStudent />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/payment-section" element={<PaymentSection />} />
