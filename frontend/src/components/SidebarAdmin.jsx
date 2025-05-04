@@ -24,7 +24,8 @@ const SidebarAdmin = ({ activeMenu, setActiveMenu }) => {
   ];
   
   return (
-<div className="h-full bg-gradient-to-b from-[#F1DAE1] to-[#D5CEE5] p-4 shadow-xl flex flex-col">
+<div className="h-full bg-gradient-to-b from-pink-100 to-indigo-100 p-4 shadow-xl flex flex-col">
+
 {/* Header Section */}
       <div className="flex items-center">
                       <img src={logo} alt="FME Logo" className="h-9 w-auto" />
