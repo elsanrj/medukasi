@@ -11,6 +11,7 @@ import DashboardStudent from './pages/DashboardStudent';
 import ClassAfterBuy from './pages/MyClassAfterBuy';
 import ClassBeforeBuy from './pages/MyClassBeforeBuy';
 import StaticMonitoring from './pages/StatisticMonitoring';
+import DashboardMateri from './pages/DashboardMateri';
 import Payment from './pages/Payment';
 import PaymentSection from './pages/PaymentSection';
 import PaymentStatus from './pages/PaymentStatus';
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/class-after-buy" element={<ClassAfterBuy />} />
         <Route path="/class-before-buy" element={<ClassBeforeBuy />} />
         <Route path="/statistic-monitoring" element={<StaticMonitoring />} />
+        <Route path="/dashboard-materi" element={<DashboardMateri />} />
       </Routes>
     </BrowserRouter>
   );
