@@ -5,13 +5,13 @@ export default function PaymentStatus() {
     <div className="bg-purple-50 min-h-screen">
       <Header />
 
-      <main className="flex justify-center items-start mt-10 py-10 px-72">
-        <div className="bg-white shadow-xl rounded-xl p-16 w-full max-w-[600px]">
+      <main className="flex justify-center items-start mt-10 py-10 px-4 md:px-10 max-w-screen-md mx-auto">
+        <div className="bg-white shadow-xl rounded-xl p-8 w-full max-w-[500px]">
           <h2 className="text-center text-lg font-bold mb-6">RIWAYAT PEMBELIAN</h2>
 
-          <div className="bg-white rounded-xl p-6 text-center">
+          <div className="bg-gray-50 rounded-xl p-6 text-center shadow-md">
             <div className="mb-6">
-              <div className="bg-[#1E73E8] text-white font-bold text-base py-3 px-4 rounded-xl w-full shadow-inner">
+              <div className="bg-blue-600 text-white font-bold text-base py-3 px-4 rounded-xl shadow-md">
                 Menunggu Pembayaran
               </div>
             </div>

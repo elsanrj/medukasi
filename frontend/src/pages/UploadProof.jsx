@@ -61,8 +61,8 @@ export default function UploadProof() {
     <div className="bg-purple-50 min-h-screen">
       <Header />
 
-      <main className="flex justify-center items-start mt-10 py-10 px-72">
-        <div className="bg-white shadow-xl rounded-xl p-16 w-full max-w-[600px]">
+      <main className="flex justify-center items-start mt-10 py-20 px-4 md:px-2 max-w-screen-md mx-auto">
+        <div className="bg-white shadow-xl rounded-xl p-20 w-full max-w-[500px]">
           <h2 className="text-center text-lg font-bold mb-6">
             UPLOAD BUKTI PEMBAYARAN
           </h2>
@@ -73,7 +73,7 @@ export default function UploadProof() {
               Tambahkan file dokumen Anda di sini (PDF, JPG, PNG), maksimal 10MB
             </p>
 
-            <div className="border-2 border-dashed border-gray-300 rounded-md mt-4 p-6 text-center bg-gray-100">
+            <div className="border-2 border-dashed border-gray-300 rounded-md mt-6 p-10 text-center bg-gray-100">
               <UploadCloud className="mx-auto mb-2 text-gray-400" size={36} />
               <p className="text-sm text-gray-600 mb-3">
                 Drag file Anda ke sini atau klik tombol di bawah
