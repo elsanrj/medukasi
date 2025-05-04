@@ -13,6 +13,7 @@ import UploadProof from './pages/UploadProof';
 import Pendaftaran from './pages/Pendaftaran';
 import Product from './pages/Product';
 import Register from './pages/Register';
+import Class from './pages/MyClassBeforeBuy';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/pendaftaran" element={<Pendaftaran />} />
         <Route path="/product" element={<Product />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/class" element={<Class />} />
       </Routes>
     </BrowserRouter>
   );
