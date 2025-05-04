@@ -12,7 +12,7 @@ export default function Login() {
       {/* Header */}
       <Header />
       {/* Login Form */}
-      <div className="min-h-screen bg-[#fef8fc] flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center" style={{ backgroundColor: '#fef7ff' }}>
         <div className="bg-white p-10 rounded-lg shadow-md w-full max-w-md">
           <div className="flex justify-center mb-6">
             <img src={logo} alt="Logo Medukasi" className="h-16" />

@@ -10,7 +10,7 @@ export default function Register() {
   return (
     <>
       <Header />
-      <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex items-center justify-center min-h-screen" style={{ backgroundColor: '#fef7ff' }}>
         <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
           <h2 className="text-2xl font-bold mb-6 text-center">Daftar Akun</h2>
           <form className="space-y-4">
@@ -57,11 +57,6 @@ export default function Register() {
             <Link to="/home-after-login" className="flex justify-center bg-blue-600 text-white px-6 py-1 rounded text-center">
               Register
             </Link>
-            {/* <Link to="/home-after-login"
-              className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
-            >
-              Register
-            </Link> */}
           </form>
           <p className="mt-4 text-center text-sm">
             Sudah punya akun?{" "}
