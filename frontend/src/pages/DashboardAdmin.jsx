@@ -78,7 +78,7 @@ const DashboardAdmin = () => {
 // Di bawah state
 const visibleStudents = students.slice(0, 10); // Potong array siswa hanya 10 baris
   return (
-    <div className="flex flex-col min-h-screen bg-[#fdf5ff]">
+    <div className="flex flex-col min-h-screen bg-purple-50">
       <HeaderAdmin />
       <div className="flex flex-1 overflow-auto">
         <div className="w-64 min-w-64 overflow-auto">
