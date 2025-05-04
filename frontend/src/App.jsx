@@ -13,7 +13,7 @@ import UploadProof from './pages/UploadProof';
 import Pendaftaran from './pages/Pendaftaran';
 import Product from './pages/Product';
 import Register from './pages/Register';
-import Class from './pages/MyClassBeforeBuy';
+import Class from './pages/DashboardStudent';
 
 const App = () => {
   return (
