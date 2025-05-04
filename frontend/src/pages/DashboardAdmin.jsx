@@ -78,7 +78,7 @@ const DashboardAdmin = () => {
 // Di bawah state
 const visibleStudents = students.slice(0, 10); // Potong array siswa hanya 10 baris
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-purple-50">
       <HeaderAdmin />
       <div className="flex flex-1 overflow-auto">
         <div className="w-64 min-w-64 overflow-auto">
@@ -137,45 +137,44 @@ const visibleStudents = students.slice(0, 10); // Potong array siswa hanya 10 ba
                   </svg>
                 </div>
               {/* Tabel Data */}
-              <div className="rounded-xl shadow-lg border border-[#D5CEE5] bg-white">
-              <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
-                <table className="w-full">
-                  <thead className="bg-[#6D6DB0] sticky top-0">
-                    <tr className="divide-x divide-white">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">ID</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y-[1px] divide-white/80 bg-gradient-to-r from-[#C6C4C9] to-[#6D6DB0]">
-                    {visibleStudents.map((student) => (
-                      <tr key={student.id} className="divide-x divide-white">
-                        <td className="px-6 py-4 text-sm text-white">{student.id}</td>
-                        <td className="px-6 py-4 text-sm text-white ">{student.name}</td>
-                        <td className="px-6 py-4 text-sm text-white">{student.program}</td>
-                        <td className="px-6 py-4 text-sm text-white">
-                          <span >
-                            {student.status}
-                          </span>
-                        </td>
-                        <td className="px-6 py-4">
-                          <div className="flex gap-2">
-                            <button className="px-3 py-1 text-xs bg-[#228FE6] text-white rounded-md hover:bg-[#5D5DA1]">
-                              Edit
-                            </button>
-                            <button className="px-3 py-1 text-xs bg-red-500 text-white rounded-md hover:bg-red-600">
-                              Hapus
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-                </div>  
+              <div className="rounded-xl shadow-lg border border-indigo-200 bg-white">
+  <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
+    <table className="w-full">
+      <thead className="bg-indigo-500 sticky top-0">
+        <tr className="divide-x divide-white">
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">ID</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Aksi</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y bg-gradient-to-r from-gray-300 to-indigo-400">
+        {visibleStudents.map((student) => (
+          <tr key={student.id} className="divide-x divide-white">
+            <td className="px-6 py-4 text-sm text-white">{student.id}</td>
+            <td className="px-6 py-4 text-sm text-white">{student.name}</td>
+            <td className="px-6 py-4 text-sm text-white">{student.program}</td>
+            <td className="px-6 py-4 text-sm text-white">
+              <span>{student.status}</span>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex gap-2">
+                <button className="px-3 py-1 text-xs bg-blue-500 text-white rounded-md hover:bg-indigo-600">
+                  Edit
+                </button>
+                <button className="px-3 py-1 text-xs bg-red-500 text-white rounded-md hover:bg-red-600">
+                  Hapus
+                </button>
               </div>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>  
+</div>
+
             </>
           )}
 
@@ -206,46 +205,47 @@ const visibleStudents = students.slice(0, 10); // Potong array siswa hanya 10 ba
     </div>
 
     {/* Tabel Konfirmasi */}
-    <div className="rounded-xl shadow-lg border border-[#D5CEE5] bg-white">
-      <div className="max-h-[600px] overflow-y-auto">
-        <table className="w-full">
-          <thead className="bg-[#6D6DB0] sticky top-0">
-            <tr className="divide-x divide-white">
-              <th className="px-6 py-4 text-left text-sm font-semibold text-white">ID</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama Peserta</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold text-white">Metode Pembayaran</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold text-white">Bukti Pembayaran</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
-            </tr>
-          </thead>
-          
-          <tbody className="divide-y-[1px] divide-white/80 bg-gradient-to-r from-[#C6C4C9] to-[#6D6DB0]">
-            {paymentConfirmations.slice(0, 20).map((confirmation) => (
-              <tr key={confirmation.id} className="divide-x divide-white">
-                <td className="px-6 py-4 text-sm text-white">{confirmation.id}</td>
-                <td className="px-6 py-4 text-sm text-white ">{confirmation.name}</td>
-                <td className="px-6 py-4 text-sm text-white">{confirmation.metode}</td>
-                <td className="px-6 py-4">
-                  <button className="text-white hover:text-[#5D5DA1] text-sm underline">
-                    Lihat Bukti Pembayaran
-                  </button>
-                </td>
-                <td className="px-6 py-4">
-                  <div className="flex gap-2">
-                    <button className="px-3 py-1 text-xs bg-[#0984E3] text-white rounded-md hover:bg-green-600">
-                      Terima
-                    </button>
-                    <button className="px-3 py-1 text-xs bg-red-500 text-white rounded-md hover:bg-red-600">
-                      Tolak
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
-    </div>
+    <div className="rounded-xl shadow-lg border border-indigo-200 bg-white">
+  <div className="max-h-[600px] overflow-y-auto">
+    <table className="w-full">
+      <thead className="bg-indigo-500 sticky top-0">
+        <tr className="divide-x divide-white">
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">ID</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama Peserta</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Metode Pembayaran</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Bukti Pembayaran</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
+        </tr>
+      </thead>
+
+      <tbody className="divide-y divide-white/80 bg-gradient-to-r from-gray-300 to-indigo-400">
+        {paymentConfirmations.slice(0, 20).map((confirmation) => (
+          <tr key={confirmation.id} className="divide-x divide-white">
+            <td className="px-6 py-4 text-sm text-white">{confirmation.id}</td>
+            <td className="px-6 py-4 text-sm text-white">{confirmation.name}</td>
+            <td className="px-6 py-4 text-sm text-white">{confirmation.metode}</td>
+            <td className="px-6 py-4">
+              <button className="text-white hover:text-indigo-300 text-sm underline">
+                Lihat Bukti Pembayaran
+              </button>
+            </td>
+            <td className="px-6 py-4">
+              <div className="flex gap-2">
+                <button className="px-3 py-1 text-xs bg-blue-600 text-white rounded-md hover:bg-green-600">
+                  Terima
+                </button>
+                <button className="px-3 py-1 text-xs bg-red-500 text-white rounded-md hover:bg-red-600">
+                  Tolak
+                </button>
+              </div>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
   </>
 )}
         </main>
