@@ -42,7 +42,7 @@ const DashboardPimpinan = () => {
 
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#fdf5ff]">
+    <div className="flex flex-col min-h-screen bg-purple-50">
       <HeaderAdmin toggleSidebar={toggleSidebar} />
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar */}
