@@ -12,6 +12,7 @@ import ClassAfterBuy from './pages/MyClassAfterBuy';
 import ClassBeforeBuy from './pages/MyClassBeforeBuy';
 import StaticMonitoring from './pages/StatisticMonitoring';
 import DashboardMateri from './pages/DashboardMateri';
+import DetailMateri from './pages/DetailMateri';
 import Payment from './pages/Payment';
 import PaymentSection from './pages/PaymentSection';
 import PaymentStatus from './pages/PaymentStatus';
@@ -42,6 +43,7 @@ const App = () => {
         <Route path="/class-before-buy" element={<ClassBeforeBuy />} />
         <Route path="/statistic-monitoring" element={<StaticMonitoring />} />
         <Route path="/dashboard-materi" element={<DashboardMateri />} />
+        <Route path="/detail-materi" element={<DetailMateri />} />
       </Routes>
     </BrowserRouter>
   );
