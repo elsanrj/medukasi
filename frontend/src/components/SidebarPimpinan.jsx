@@ -32,7 +32,8 @@ const SidebarPimpinan = ({ activeMenu, setActiveMenu }) => {
   ];
   
   return (
-    <div className="min-h-screen w-64 bg-gradient-to-b from-[#D5CEE5] to-[#F1DAE1] p-4 shadow-xl">
+    <div className="h-full bg-gradient-to-b from-pink-100 to-indigo-100 p-4 shadow-xl flex flex-col">
+
       <div className="mb-6">
         <div className="flex items-center mb-6">
           <div className="flex items-center">
