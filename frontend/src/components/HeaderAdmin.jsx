@@ -3,23 +3,35 @@ import React from 'react';
 
 const HeaderAdmin = ({ toggleSidebar }) => {
   return (
-    <div className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-red-400 to-indigo-900 text-white">
+    <div className="flex justify-between items-center px-8 py-6 bg-gradient-to-r from-[#c86d8d] to-[#1a237e] rounded-t-2xl text-white shadow-md">
       {/* Logo dan Menu Button - Dipindah ke kiri */}
-
+      <div className="flex items-center w-56"> {/* Lebar sama dengan sidebar */}
+        <button 
+          onClick={toggleSidebar}
+          className="p-2 rounded-md hover:bg-white/10 transition-colors mr-4"
+        >
+         
+        </button>
+        <div className="text-2xl font-bold">
+          
+          <span className="text-white">ME</span>
+        </div>
+      </div>
+      
       {/* Search Bar - Diposisikan sejajar dengan konten utama */}
-      <div className="flex-1 ml-56"> {/* Margin kiri disesuaikan */}
+      <div className="flex-1 ml-6"> {/* Margin kiri disesuaikan */}
         <div className="relative max-w-2xl">
           <input
             type="text"
             placeholder="Search..."
-            className="w-full py-2 px-4 pl-10 rounded-lg bg-white/20 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-white/30 focus:bg-white/30 transition-all"
+            className="w-full py-2 px-4 pl-10 rounded-lg bg-white/70 text-white placeholder-black/50 focus:outline-none focus:ring-2 focus:ring-white/30 focus:bg-white/30 transition-all"
           />
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 absolute left-3 top-2.5 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 absolute left-3 top-2.5 text-black/50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </div>
       </div>
-
+      
       {/* Icons and User Profile */}
       <div className="flex items-center gap-5">
         <button className="p-1 relative hover:bg-white/10 rounded-full p-2 transition-colors">
@@ -28,7 +40,7 @@ const HeaderAdmin = ({ toggleSidebar }) => {
           </svg>
           <span className="absolute top-0 right-0 h-2 w-2 rounded-full bg-red-400"></span>
         </button>
-
+        
         <div className="flex items-center gap-2 cursor-pointer group">
           <div className="h-9 w-9 rounded-full bg-white overflow-hidden border-2 border-white/30 group-hover:border-white/50 transition-colors">
             <img src="https://via.placeholder.com/40" alt="User" className="h-full w-full object-cover" />
