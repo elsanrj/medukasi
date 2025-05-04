@@ -13,7 +13,7 @@ const Header = () => {
         <Link to="/" className="hover:underline">
           Home
         </Link>
-        <Link to="/product" className="hover:underline">
+        <Link to="#" className="hover:underline">
           Product
         </Link>
         <Link to="#" className="hover:underline">

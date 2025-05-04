@@ -61,8 +61,8 @@ export default function UploadProof() {
     <div className="bg-purple-50 min-h-screen">
       <Header />
 
-      <main className="flex justify-center items-start mt-10 py-10">
-        <div className="bg-white shadow-xl rounded-xl p-6 w-full max-w-[600px]">
+      <main className="flex justify-center items-start mt-10 py-10 px-72">
+        <div className="bg-white shadow-xl rounded-xl p-16 w-full max-w-[600px]">
           <h2 className="text-center text-lg font-bold mb-6">
             UPLOAD BUKTI PEMBAYARAN
           </h2>

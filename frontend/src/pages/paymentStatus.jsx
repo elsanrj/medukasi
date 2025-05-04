@@ -1,13 +1,13 @@
 import Header from '../components/Header';
 
-export default function PaymentStatus(){
+export default function PaymentStatus() {
   return (
     <div className="bg-purple-50 min-h-screen">
       <Header />
 
-      <main className="flex justify-center items-start mt-10 py-10">
-        <div className="w-full max-w-[600px] px-4">
-          <h2 className="text-xl font-bold text-center mb-8">RIWAYAT PEMBELIAN</h2>
+      <main className="flex justify-center items-start mt-10 py-10 px-72">
+        <div className="bg-white shadow-xl rounded-xl p-16 w-full max-w-[600px]">
+          <h2 className="text-center text-lg font-bold mb-6">RIWAYAT PEMBELIAN</h2>
 
           <div className="bg-white rounded-xl p-6 text-center">
             <div className="mb-6">
