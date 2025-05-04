@@ -1,5 +1,6 @@
 // SidebarPimpinan.jsx
 import React from 'react';
+import logo from '../assets/logo_medukasi.png';
 
 const SidebarPimpinan = ({ activeMenu, setActiveMenu }) => {
   // Menu items
@@ -34,9 +35,9 @@ const SidebarPimpinan = ({ activeMenu, setActiveMenu }) => {
     <div className="min-h-screen w-64 bg-gradient-to-b from-[#D5CEE5] to-[#F1DAE1] p-4 shadow-xl">
       <div className="mb-6">
         <div className="flex items-center mb-6">
-          <span className="text-red-500 font-bold text-xl">e</span>
-          <span className="text-indigo-700 font-bold text-xl">ME</span>
-          <span className="ml-2 text-gray-700 font-medium">PIMPINAN</span>
+          <div className="flex items-center">
+                          <img src={logo} alt="FME Logo" className="h-9 w-auto" />
+                        </div>
         </div>
         
         <div className="mb-4">
