@@ -34,12 +34,9 @@ export default function Login() {
                 className="bg-transparent outline-none w-full"
               />
             </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-md transition duration-200"
-            >
+            <Link to="/home-after-login" className="flex justify-center bg-blue-600 text-white px-6 py-1 rounded text-center">
               Login
-            </button>
+            </Link>
           </form>
 
           <p className="text-center text-sm text-gray-700 mt-4">

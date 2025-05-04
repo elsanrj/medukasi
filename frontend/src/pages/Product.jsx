@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../components/HeaderHome";
+import Header from "../components/Header";
 
 import satu from '../assets/product/satu.jpeg';
 import dua from '../assets/product/dua.jpeg';

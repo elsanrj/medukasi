@@ -1,6 +1,12 @@
 import React from 'react';
 import Header from '../components/Header';
 
+import emailIcon from '../assets/medsos/email.png';
+import whatsappIcon from '../assets/medsos/whatsapp.webp';
+import twitterIcon from '../assets/medsos/twitter.png';
+import instagramIcon from '../assets/medsos/instagram.png';
+import youtubeIcon from '../assets/medsos/youtube.png';
+import linkedinIcon from '../assets/medsos/linkedin.png';
 import heroImage from '../assets/hero.jpg';
 import logo from '../assets/logo_medukasi.png';
 
@@ -26,13 +32,13 @@ export default function HomeAfterLogin() {
               { label: 'Medali OSN', value: 232 },
               { label: 'Persiapan Kampus', value: 50 }
             ].map((item, idx) => (
-              <div key={idx} className="bg-purple-100 px-6 py-4 rounded shadow text-center w-36">
-                <p className="text-2xl font-bold text-purple-700">{item.value}</p>
+              <div key={idx} className="bg-gradient-to-r from-red-400 to-indigo-900 text-white px-6 py-4 rounded-xl shadow text-center w-36">
+                <p className="text-2xl font-bold">{item.value}</p>
                 <p className="text-sm">{item.label}</p>
               </div>
             ))}
           </div>
-          <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-6 py-4 rounded shadow mt-6 max-w-xl">
+          <div className="bg-gradient-to-r from-red-400 to-indigo-900 text-white px-6 py-4 rounded-xl shadow mt-6 max-w-xl">
             <h2 className="text-lg font-semibold">LEBIH DARI 35 SEKOLAH</h2>
             <p className="text-sm mt-1 leading-relaxed">
               Bermitra jangka panjang dengan kami dalam memberikan kelas persiapan untuk siswa siswi dalam menghadapi berbagai kompetisi akademik bergengsi baik nasional maupun internasional.

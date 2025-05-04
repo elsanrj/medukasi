@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Header from "../components/HeaderHome";
 
 import emailIcon from "../assets/login/email.png";
@@ -53,18 +54,21 @@ export default function Register() {
                 className="bg-transparent w-full outline-none"
               />
             </div>
-            <button
-              type="submit"
+            <Link to="/home-after-login" className="flex justify-center bg-blue-600 text-white px-6 py-1 rounded text-center">
+              Register
+            </Link>
+            {/* <Link to="/home-after-login"
               className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-200"
             >
               Register
-            </button>
+            </Link> */}
           </form>
           <p className="mt-4 text-center text-sm">
             Sudah punya akun?{" "}
-            <a href="/login" className="text-red-500 hover:underline">
+
+            <Link to="/login" className="text-red-500 hover:underline">
               Login
-            </a>
+            </Link>
           </p>
         </div>
       </div>

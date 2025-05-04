@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Header from '../components/Header';
 import kelas from '../assets/class/kelas.png';
 
@@ -37,9 +38,9 @@ export default function ClassBeforeBuy() {
                 Anda belum memiliki kelas apapun. Ayo tingkatkan kemampuan bersama!
               </p>
             </div>
-            <button className="ml-6 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full font-medium transition">
+            <Link to='/product' className="ml-6 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-full font-medium transition">
               Pilih Class
-            </button>
+            </Link>
           </div>
 
         </div>

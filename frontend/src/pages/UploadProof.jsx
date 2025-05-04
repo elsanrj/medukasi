@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import { UploadCloud } from 'lucide-react';
 import Header from '../components/Header';
+import { useNavigate } from 'react-router-dom';
 
 export default function UploadProof() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadError, setUploadError] = useState(null);
+  const navigate = useNavigate();
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
@@ -110,10 +112,9 @@ export default function UploadProof() {
 
           <div className="flex justify-end mt-6">
             <button
-              onClick={handleSubmit}
-              className={`bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition ${
-                isUploading ? 'bg-blue-400 cursor-not-allowed' : ''
-              }`}
+              onClick={() => navigate('/class-after-buy')}
+              className={`bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition ${isUploading ? 'bg-blue-400 cursor-not-allowed' : ''
+                }`}
               disabled={isUploading}
             >
               {isUploading ? 'Uploading...' : 'Next'}

@@ -10,10 +10,10 @@ const Header = () => {
       </div>
 
       <nav className="flex items-center gap-6">
-        <Link to="/" className="hover:underline">
+        <Link to="/home-after-login" className="hover:underline">
           Home
         </Link>
-        <Link to="#" className="hover:underline">
+        <Link to="/class-before-buy" className="hover:underline">
           Class
         </Link>
         <Link to="#" className="hover:underline">

@@ -41,8 +41,11 @@ export default function PaymentSection() {
           <button className="bg-gray-200 hover:bg-gray-300 text-black font-medium px-4 p-2 rounded-full">
             Download Kode QR
           </button>
+          <hr className="my-2" />
+          <Link to="/upload-bukti-payment" className="bg-gray-200 hover:bg-gray-300 text-black font-medium px-4 p-2 rounded-full">
+            Upload Bukti Pembayaran
+          </Link>
           <hr className="my-8" />
-
           <Link to="/payment-status" className="text-green-600 font-semibold hover:underline">
             Cek Status Pembayaran
           </Link>
