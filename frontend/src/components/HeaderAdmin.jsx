@@ -3,7 +3,7 @@ import React from 'react';
 import logo from '../assets/logo_medukasi.png';
 const HeaderAdmin = ({ toggleSidebar }) => {
   return (
-    <div className="flex justify-between items-center px-8 py-6 bg-gradient-to-r from-[#c86d8d] to-[#1a237e] rounded-t-2xl text-white shadow-md">
+    <div className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-red-400 to-indigo-900 text-white">
       {/* Logo dan Menu Button - Dipindah ke kiri */}
       <div className="flex items-center w-56"> {/* Lebar sama dengan sidebar */}
         <button 
