@@ -27,7 +27,7 @@ export default function HomeBeforeLogin() {
         {/* Kanan: Teks, Statistik, dan Info */}
         <div className="w-full lg:w-1/2 flex flex-col items-center text-center lg:px-10">
           <h1 className="text-2xl lg:text-3xl font-bold text-black">PT MANDIRI EDUKASI INDONESIA</h1>
-          <p className="italic text-gray-700 mt-2 text-sm max-w-md">
+          <p className="italic text-gray-700 mt-2 text-sm max-w-md font-bold">
             "National Edustartup to help young learner achieving their great potentials"
           </p>
 
@@ -75,7 +75,6 @@ export default function HomeBeforeLogin() {
           </div>
 
           {/* KANAN: Kontak dan Media Sosial */}
-          {/* Bagian Kanan (Diturunkan sedikit) */}
           <div className="flex-1 flex flex-col items-center text-center mt-4 lg:mt-5">
             <h2 className="text-md font-semibold mb-3">Hubungi Kami</h2>
             <div className="flex items-center space-x-2 mb-2">
@@ -83,14 +82,14 @@ export default function HomeBeforeLogin() {
               <a href="mailto:akademik@medukasi.id" className="text-sm underline">akademik@medukasi.id</a>
             </div>
             <div className="flex items-center space-x-2 mb-4">
-              <img src={whatsappIcon} alt="WhatsApp" className="h-5 w-5" />
+              <img src={whatsappIcon} alt="WhatsApp" className="h-7 w-7" />
               <span className="text-sm">082274152348</span>
             </div>
             <div className="flex space-x-4">
-              <img src={twitterIcon} alt="X" className="h-5 w-5" />
-              <img src={instagramIcon} alt="Instagram" className="h-6 w-6" />
-              <img src={youtubeIcon} alt="YouTube" className="h-6 w-6" />
-              <img src={linkedinIcon} alt="LinkedIn" className="h-6 w-6" />
+              <img src={twitterIcon} alt="X" className="h-5 w-5 mr-2.5" />
+              <img src={instagramIcon} alt="Instagram" className="h-8 w-8 -mt-1.5" />
+              <img src={youtubeIcon} alt="YouTube" className="h-7 w-15 -mt-1 mr-3" />
+              <img src={linkedinIcon} alt="LinkedIn" className="h-6 w-6 -mt-0.5" />
             </div>
           </div>
           

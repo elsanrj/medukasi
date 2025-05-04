@@ -21,7 +21,7 @@ export default function HomeAfterLogin() {
         {/* Kanan: Teks, Statistik, dan Info */}
         <div className="w-full lg:w-1/2 flex flex-col items-center text-center lg:px-10">
           <h1 className="text-2xl lg:text-3xl font-bold text-black">PT MANDIRI EDUKASI INDONESIA</h1>
-          <p className="italic text-gray-700 mt-2 text-sm max-w-md">
+          <p className="italic text-gray-700 mt-2 text-sm max-w-md font-bold">
             "National Edustartup to help young learner achieving their great potentials"
           </p>
 
