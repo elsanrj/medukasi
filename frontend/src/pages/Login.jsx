@@ -1,5 +1,6 @@
 import React from "react";
 import Header from '../components/HeaderHome';
+import { Link } from "react-router-dom";
 
 import logo from "../assets/logo_medukasi.png";
 import email from "../assets/login/email.png";
@@ -43,9 +44,9 @@ export default function Login() {
 
           <p className="text-center text-sm text-gray-700 mt-4">
             Belum punya akun?{" "}
-            <a href="#" className="text-red-500 hover:underline">
+            <Link to="/register" className="text-red-500 hover:underline">
               Register
-            </a>
+            </Link>
           </p>
         </div>
       </div>

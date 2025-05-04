@@ -6,6 +6,10 @@ import HomeBeforeLogin from './pages/HomeBeforeLogin';
 import HomeAfterLogin from './pages/HomeAfterLogin';
 import Login from './pages/Login';
 import DashboardPimpinan from './pages/DashboardPimpinan';
+import DashboardAdmin from './pages/DashboardAdmin';
+import DashboardStudent from './pages/DashboardStudent';
+import ClassAfterBuy from './pages/ClassAfterBuy';
+import ClassBeforeBuy from './pages/ClassBeforeBuy';
 import Payment from './pages/Payment';
 import PaymentSection from './pages/PaymentSection';
 import PaymentStatus from './pages/PaymentStatus';
@@ -13,7 +17,6 @@ import UploadProof from './pages/UploadProof';
 import Pendaftaran from './pages/Pendaftaran';
 import Product from './pages/Product';
 import Register from './pages/Register';
-import Class from './pages/DashboardStudent';
 
 const App = () => {
   return (
@@ -24,6 +27,8 @@ const App = () => {
         <Route path="/home-after-login" element={<HomeAfterLogin />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard-pimpinan" element={<DashboardPimpinan />} />
+        <Route path="/dashboard-admin" element={<DashboardAdmin />} />
+        <Route path="/dashboard-student" element={<DashboardStudent />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/payment-section" element={<PaymentSection />} />
         <Route path="/payment-status" element={<PaymentStatus />} />
@@ -31,7 +36,8 @@ const App = () => {
         <Route path="/pendaftaran" element={<Pendaftaran />} />
         <Route path="/product" element={<Product />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/class" element={<Class />} />
+        <Route path="/class-after-buy" element={<ClassAfterBuy />} />
+        <Route path="/class-before-buy" element={<ClassBeforeBuy />} />
       </Routes>
     </BrowserRouter>
   );
