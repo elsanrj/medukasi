@@ -16,7 +16,7 @@ export default function DetailMateri() {
         {/* Back button with title */}
         <div className="mb-12 mt-4">
           <h2 className="text-xl font-bold text-black flex items-center">
-            <span className="mr-2">←</span> Medu Course
+            <span className="mr-2"></span> Medu Course
           </h2>
         </div>
 

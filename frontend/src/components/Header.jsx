@@ -25,7 +25,9 @@ const Header = () => {
         <Link to="#" className="hover:underline">
           My Class
         </Link>
-        <div className="bg-white text-gray-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">👤</div>
+        <Link to="/dashboard-student">
+          <div className="bg-white text-gray-600 rounded-full w-8 h-8 flex items-center justify-center text-sm font-semibold">👤</div>
+        </Link>
       </nav>
     </header>
   );

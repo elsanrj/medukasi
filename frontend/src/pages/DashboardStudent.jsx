@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Header from '../components/Header';
 import profileImg from '../assets/login/avatar.jpg';
@@ -46,12 +47,12 @@ export default function ClassStatusPage() {
       {/* Main Content */}
       <main className="flex-1 p-8">
         <div className="max-w-6xl mx-auto bg-[#FEF7FF] rounded-2xl border-8 border-[#CAC4D0] p-6">
-          
+
           {/* Profile Card */}
           <section className="bg-gradient-to-b from-red-400 to-indigo-900 rounded-xl p-5 mb-8 mx-8 text-white">
             <div className="flex items-center">
-              <img 
-                src={profileImg} 
+              <img
+                src={profileImg}
                 alt="Profile"
                 className="w-20 h-20 rounded-2xl object-cover mr-6"
               />
@@ -62,7 +63,9 @@ export default function ClassStatusPage() {
                     <p className="text-base">Bergabung sejak 2025</p>
                     <p className="text-base">Kota Bandung</p>
                   </div>
-                  <p className="text-base self-end">Statistik & Monitoring</p>
+                  <Link to="/statistic-monitoring" className="self-end hover:underline">
+                    Statistik & Monitoring
+                  </Link>
                 </div>
               </div>
             </div>
@@ -72,8 +75,8 @@ export default function ClassStatusPage() {
           <section className="flex justify-between items-center mb-8 px-6">
             <h3 className="text-2xl font-bold text-gray-900">Status Kelas</h3>
             <div className="flex items-center bg-gray-100 px-4 py-2 rounded-lg">
-              <img 
-                src={searchIcon} 
+              <img
+                src={searchIcon}
                 alt="Cari"
                 className="w-4 h-4 mr-2"
               />
@@ -90,14 +93,14 @@ export default function ClassStatusPage() {
           {/* Class Cards */}
           <section className="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
             {classData.map((classItem, index) => (
-              <div 
+              <div
                 key={classItem.id}
                 className="bg-gradient-to-b from-red-400 to-indigo-900 rounded-xl p-6 text-white"
               >
                 <div className="flex flex-col items-center mb-4">
                   <div className="bg-white p-1 rounded-md w-full mb-3">
-                    <img 
-                      src={classItem.image} 
+                    <img
+                      src={classItem.image}
                       alt={classItem.title}
                       className="w-full h-14 object-contain"
                     />

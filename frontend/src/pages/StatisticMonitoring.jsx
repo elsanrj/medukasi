@@ -11,10 +11,10 @@ export default function StaticMonitoring() {
       {/* Main Content */}
       <div className="flex flex-col items-center flex-1 p-8">
         <div className="w-full max-w-6xl bg-[#FEF7FF] rounded-[18px] border-[6px] border-[#CAC4D0] p-10 shadow-md">
-          
+
           {/* Judul Halaman */}
           <h2 className="text-2xl font-bold text-black mb-8">
-            ← Static & Monitoring
+            Statistik & Monitoring
           </h2>
 
           {/* Kotak Aktivitas */}

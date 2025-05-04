@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 
 export default function DashboardMateri() {
@@ -30,11 +31,11 @@ export default function DashboardMateri() {
               telah diselesaikan 35%
             </p>
             <div className="mt-4">
-              <button
+              <Link to="/detail-materi"
                 className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-1 text-sm rounded-md font-medium"
               >
                 Ayo Lanjut...
-              </button>
+              </Link>
             </div>
           </div>
         </div>
