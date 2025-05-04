@@ -79,72 +79,73 @@ const DashboardPimpinan = () => {
           </div>
 
           {activeMenu === 'Siswa Terdaftar' && (
-            <div className="rounded-xl shadow-lg border border-[#D5CEE5] bg-white">
-              <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
-                <table className="w-full">
-                  <thead className="bg-[#6D6DB0] sticky top-0">
-                    <tr className="divide-x divide-white">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">No</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program Belajar</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y-[1px] divide-white/80 bg-gradient-to-r from-[#C6C4C9] to-[#6D6DB0]">
-                    {students.map((student) => (
-                      <tr key={student.id} className="hover:bg-[#F5F3FF] transition-colors divide-x divide-white">
-                        <td className="px-6 py-4 text-sm text-white">{student.id}</td>
-                        <td className="px-6 py-4 text-sm text-white font-medium">{student.nama}</td>
-                        <td className="px-6 py-4 text-sm text-white">{student.program}</td>
-                        <td className="px-6 py-4">
-                          <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                            student.status === 'Aktif' ? 'bg-[#228FE6] text-white' :
-                            'bg-red-500 text-white'
-                          }`}>
-                            {student.status}
-                          </span>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <div className="rounded-xl shadow-lg border border-indigo-200 bg-white">
+  <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
+    <table className="w-full">
+      <thead className="bg-indigo-500 sticky top-0">
+        <tr className="divide-x divide-white">
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">No</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program Belajar</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-white/80 bg-gradient-to-r from-gray-300 to-indigo-400">
+        {students.map((student) => (
+          <tr key={student.id} className="hover:bg-violet-100 transition-colors divide-x divide-white">
+            <td className="px-6 py-4 text-sm text-white">{student.id}</td>
+            <td className="px-6 py-4 text-sm text-white font-medium">{student.nama}</td>
+            <td className="px-6 py-4 text-sm text-white">{student.program}</td>
+            <td className="px-6 py-4">
+              <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                student.status === 'Aktif' ? 'bg-blue-500 text-white' : 'bg-red-500 text-white'
+              }`}>
+                {student.status}
+              </span>
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
           )}
           {/* Siswa Aktif */}
           {activeMenu === 'Siswa Aktif' && (
-            <div className="rounded-xl shadow-lg border border-[#D5CEE5] bg-white">
-              <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
-                <table className="w-full">
-                  <thead className="bg-[#6D6DB0] sticky top-0">
-                    <tr className="divide-x divide-white">
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">No</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program Belajar</th>
-                      <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y-[1px] divide-white/80 bg-gradient-to-r from-[#C6C4C9] to-[#6D6DB0]">
-                  {students
-            .filter((student) => student.status === 'Aktif')  
-            .map((student) => (
-              <tr key={student.id} className="hover:bg-[#F5F3FF] transition-colors divide-x divide-white">
-                <td className="px-6 py-4 text-sm text-white">{student.id}</td>
-                <td className="px-6 py-4 text-sm text-white font-medium">{student.nama}</td>
-                <td className="px-6 py-4 text-sm text-white">{student.program}</td>
-                <td className="px-6 py-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                    student.status === 'Aktif' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
-                  }`}>
-                    {student.status}
-                  </span>
-                </td>
-              </tr>
-            ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
+            <div className="rounded-xl shadow-lg border border-indigo-200 bg-white">
+  <div className="max-h-[500px] min-h-[200px] overflow-y-auto">
+    <table className="w-full">
+      <thead className="bg-indigo-500 sticky top-0">
+        <tr className="divide-x divide-white">
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">No</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Nama</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Program Belajar</th>
+          <th className="px-6 py-4 text-left text-sm font-semibold text-white">Status</th>
+        </tr>
+      </thead>
+      <tbody className="divide-y divide-white/80 bg-gradient-to-r from-gray-300 to-indigo-400">
+        {students
+          .filter((student) => student.status === 'Aktif')
+          .map((student) => (
+            <tr key={student.id} className="hover:bg-violet-100 transition-colors divide-x divide-white">
+              <td className="px-6 py-4 text-sm text-white">{student.id}</td>
+              <td className="px-6 py-4 text-sm text-white font-medium">{student.nama}</td>
+              <td className="px-6 py-4 text-sm text-white">{student.program}</td>
+              <td className="px-6 py-4">
+                <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                  student.status === 'Aktif' ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                }`}>
+                  {student.status}
+                </span>
+              </td>
+            </tr>
+          ))}
+      </tbody>
+    </table>
+  </div>
+</div>
+
           )}
 
           {activeMenu === 'Grafik' && (
