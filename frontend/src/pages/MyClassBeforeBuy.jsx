@@ -5,14 +5,13 @@ import kelas from '../assets/class/kelas.png';
 
 export default function ClassBeforeBuy() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col min-h-screen font-sans bg-[#fef7ff]">
       {/* Header */}
       <Header />
 
       {/* Main Content */}
       <div className="flex flex-col items-center flex-1 p-8">
-        <div className="w-full max-w-5xl bg-[#FEF7FF] rounded-[18px] border-[6px] border-[#CAC4D0] p-10 shadow-md">
-          
+        
           {/* Greeting */}
           <h2 className="text-2xl font-bold text-center text-black mb-6">
             Selamat Datang, User!
@@ -43,7 +42,7 @@ export default function ClassBeforeBuy() {
             </Link>
           </div>
 
-        </div>
+       
       </div>
     </div>
   );

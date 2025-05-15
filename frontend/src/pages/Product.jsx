@@ -13,7 +13,6 @@ const products = [
     description:
       "Mandiri OSN adalah pionir komunitas belajar pertama yang berfokus pada persiapan siswa menuju Olimpiade Sains Nasional (OSN).",
     image: satu,
-    active: true,
   },
   {
     title: "Medu Course",

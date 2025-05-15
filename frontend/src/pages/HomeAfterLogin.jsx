@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from '../components/Header';
-
-import heroImage from '../assets/hero.jpg';
+import Footer from '../components/Footer';
+import heroImage from '../assets/hero.png';
 import logo from '../assets/logo_medukasi.png';
 
 export default function HomeAfterLogin() {
   return (
-    <div className="flex flex-col min-h-screen font-sans" style={{ backgroundColor: '#fef7ff' }}>
-      
+    <div className="flex flex-col min-h-screen font-sans bg-[#fef7ff]">
+
       {/* Header */}
       <Header />
 
@@ -46,6 +46,10 @@ export default function HomeAfterLogin() {
           </div>
         </div>
       </section>
+      
+      {/* Footer */}
+      <Footer />
     </div>
+
   );
 }

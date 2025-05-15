@@ -4,7 +4,7 @@ import logo from '../assets/logo_medukasi.png';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-[#F79B72] to-[#166534] text-white rounded-t-xl">
+    <header className="flex justify-between items-center px-10 py-5 bg-gradient-to-r from-red-400 to-indigo-900 text-white rounded-t-xl">
       <div className="flex items-center">
         <img src={logo} alt="FME Logo" className="h-9 w-auto" />
       </div>

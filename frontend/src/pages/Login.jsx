@@ -17,6 +17,7 @@ export default function Login() {
           <div className="flex justify-center mb-6">
             <img src={logo} alt="Logo Medukasi" className="h-16" />
           </div>
+          <h2 className="text-2xl font-bold mb-6 text-center">Masuk Akun</h2>
           <form className="space-y-4">
             <div className="flex items-center border rounded-md px-3 py-2 bg-gray-200">
               <img src={email} alt="Email Icon" className="h-5 w-5 mr-2" />
